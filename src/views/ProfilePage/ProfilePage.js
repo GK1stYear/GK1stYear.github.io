@@ -47,7 +47,7 @@ export default function ProfilePage(props) {
     <div>
       <Header
         color="transparent"
-        brand="Material Kit React"
+        brand="First Year Platform"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -67,8 +67,8 @@ export default function ProfilePage(props) {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
+                    <h3 className={classes.title}>Mixo Ngoveni</h3>
+                    <h6>CEO</h6>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
@@ -84,10 +84,17 @@ export default function ProfilePage(props) {
             </GridContainer>
             <div className={classes.description}>
               <p>
-                An artist of considerable range, Chet Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.{" "}
+              Mixo Fortune Ngoveni the Founder/CEO of Geekulcha, a Tech entrepreneur, Mobile Ninja, Connector,
+              Social Media geek, Amateur Chef and a member of Tedx Pretoria organizing team
+              In 2010 he represented Tshwane University of Technology, at the Microsoft Imagine Cup local finals and
+              went on to be selected as one of six Microsoft Student Partners in South Africa. His work with Geekulcha
+              has been profiled by the World Bank and Info Dev in the form of a case study and mini documentary video
+
+              In 2014 he got nominated by SAINE as one of Tomorrow’s Leaders and became one of 30 Youth Villages
+              Most Inspirational Young South Africans. He is one of the Sowetan Top 100 Young Bosses in South Africa
+              for 2015 & 2016 and is also Mail and Guardian Top 200 Young South Africans for 2015. In 2016 Mixo
+              became one of the Top 100 Superbalist, HTXT Africa’s Top 10 Young South African’s in Tech and Youth
+              Village Top 30Under30 Young Inspiring Africans. Mixo is one of the 2017 IITPSA IT Personality of the Year Finalist{" "}
               </p>
             </div>
             <GridContainer justify="center">

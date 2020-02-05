@@ -4,6 +4,7 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
+
 // @material-ui/icons
 
 // core components
@@ -14,7 +15,6 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
-
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
@@ -43,6 +43,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
+      
       <Parallax filter image={require("assets/img/landing-bg.jpg")}>
         <div className={classes.container}>
           <GridContainer>
@@ -54,20 +55,20 @@ export default function LandingPage(props) {
                 the organization seeks to guide the growth with skills and capacity that matters the most.
               </h4>
               <br />
-              <Button
-                color="danger"
+              <Button 
+              
+                color="default"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
+                >
                 
                 About
               </Button>
+              
               <Button
-                color="danger"
+                color="default"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -75,9 +76,8 @@ export default function LandingPage(props) {
                 Join
               </Button>
               <Button
-                color="danger"
+                color="default"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
                 target="_blank"
                 rel="noopener noreferrer"
               >

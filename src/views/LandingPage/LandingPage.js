@@ -4,27 +4,33 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
+import Popup from "reactjs-popup";
+
 
 // @material-ui/icons
 
 // core components
 import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
+//import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
+import CustomInput from "components/CustomInput/CustomInput.js";
+
+
 import Button from "components/CustomButtons/Button.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
+//import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
-import WorkSection from "./Sections/WorkSection.js";
+//import WorkSection from "./Sections/WorkSection.js";
 
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
+
 
 export default function LandingPage(props) {
   const classes = useStyles();
@@ -35,7 +41,7 @@ export default function LandingPage(props) {
         color="transparent"
         routes={dashboardRoutes}
         brand="GK1stYear"
-        rightLinks={<HeaderLinks />}
+        //rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
           height: 400,
@@ -65,16 +71,73 @@ export default function LandingPage(props) {
                 
                 About
               </Button>
-              
-              <Button
-                color="default"
-                size="lg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                
-                Join
-              </Button>
+              <Popup trigger={<button className="button" size="lg"> Join</button>} modal>
+    {close => ( 
+      <div className="modal">
+        <a className="close" onClick={close}>
+          &times;
+        </a>
+        
+        <form>
+            <GridContainer>
+              <GridItem xs={12} sm={12} md={6}>
+                <CustomInput
+                  labelText="Your Name"
+                  id="name"
+                  formControlProps={{
+                    fullWidth: true
+                  }}
+                />
+              </GridItem>
+              <GridItem xs={12} sm={12} md={6}>
+                <CustomInput
+                  labelText="Your Email"
+                  id="email"
+                  formControlProps={{
+                    fullWidth: true
+                  }}
+                />
+              </GridItem>
+              <CustomInput
+                labelText="Your Message"
+                id="message"
+                formControlProps={{
+                  fullWidth: true,
+                  className: classes.textArea
+                }}
+                inputProps={{
+                  multiline: true,
+                  rows: 5
+                }}
+              />
+              <GridContainer justify="center">
+                <GridItem xs={12} sm={12} md={4} className={classes.textCenter}>
+                  <Button color="primary">Send Message</Button>
+                </GridItem>
+              </GridContainer>
+            </GridContainer>
+          </form>
+        <div className="actions">
+          <Popup
+            trigger={<button className="button"> Join </button>}
+            position="top center"
+            closeOnDocumentClick
+          >
+            
+          </Popup>
+          <button
+            className="button"
+            onClick={() => {
+              console.log("modal closed ");
+              close();
+            }}
+          >
+            Exit
+          </button>
+        </div>
+      </div>
+    )}
+  </Popup>
               <Button
                 color="default"
                 size="lg"
@@ -92,10 +155,9 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <ProductSection />
           <TeamSection />
-          <WorkSection />
+          
         </div>
       </div>
-      <Footer />
-    </div>
+        </div>
   );
 }

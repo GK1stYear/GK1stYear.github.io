@@ -4,9 +4,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
 //import Chat from "@material-ui/icons/Chat";
-//import VerifiedUser from "@material-ui/icons/VerifiedUser";
-//import Fingerprint from "@material-ui/icons/Fingerprint";
-// core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 //import InfoArea from "components/InfoArea/InfoArea.js";
@@ -21,10 +18,14 @@ export default function ProductSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          
+        <h1 className={classes.description}>
+          ABOUT
+          </h1>
           <h2 className={classes.description}>
-            First year student? Do you want to be exposed to whats out there? Interested in tech events?
-            if you answered yes to all those questions then this is the right platform for you!
+            The Geekulcha 1st Year platform is created to help support school
+            learners on their first after high school. While building a Geek
+            Culture Sustainable innovation, the organization seeks to guide the
+            growth with skills and capacity that matters the most.
           </h2>
         </GridItem>
       </GridContainer>

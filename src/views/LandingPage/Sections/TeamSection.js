@@ -9,10 +9,10 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
+//import Button from "components/CustomButtons/Button.js";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
-import CardFooter from "components/Card/CardFooter.js";
+//import CardFooter from "components/Card/CardFooter.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
 
@@ -31,7 +31,7 @@ export default function TeamSection() {
   );
   return (
     <div className={classes.section}>
-      <h2 className={classes.title}>Here is our team</h2>
+      <h1 className={classes.title}>Activities</h1>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
@@ -40,41 +40,72 @@ export default function TeamSection() {
                 <img src={team1} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Tiyani Nghonyama
+                Hackathons
                 <br />
-                <small className={classes.smallTitle}>COO of Geekulcha</small>
+                <small className={classes.smallTitle}>What are hackathons?</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  Tiyani Nghonyama is a qualified Computer Systems Engineer and is a Director and COO of Geekulcha
-                  and Strategic Lead of the Northern Cape Developer (NCDev) ecosystem. Tiyani sits on the Advisory 
-                  Committee Boards of Tswane University of Technology and the Vaal University of Technology for Computer 
-                  Science  <a href="#pablo">links</a> 
+                A hackathon is where like minded people to come up and solve business and socially-relevant solutions through Technological and Innovative means.
+                At the end of the Hackathon, Most Viable Products (apps, websites, electronics systems, data visualizations, etc. are developed of which ignite new startups.) 
+               <a href="https://www.geekulcha.com/hackathons">Read more</a> 
                 </p>
               </CardBody>
-              <CardFooter className={classes.justifyCenter}>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-twitter"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-instagram"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-facebook"} />
-                </Button>
-              </CardFooter>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <Card plain>
+              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                <img src={team1} alt="..." className={imageClasses} />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+                Open Data Programmes
+                <br />
+                <small className={classes.smallTitle}>Whats is Open data?</small>
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                Open Data refers to data that is freely available, can be accessed, used and/or changed and republished by anyone.
+                 <a href="https://www.geekulcha.com/odisc">Read more</a> 
+                </p>
+              </CardBody>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <Card plain>
+              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                <img src={team1} alt="..." className={imageClasses} />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+                SafeHack: Cyber Security
+                <br />
+                <small className={classes.smallTitle}>What is Safe Hack?</small>
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                SafeHack is the ability to encourage our hackers to consider their responsibilities in building something that is intrinsically safe from the beginning, by doing so we are adding a Cyber Security awareness component into the hackathon
+                <a href="https://www.geekulcha.com/safehack">Read More</a> 
+                </p>
+              </CardBody>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <Card plain>
+              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                <img src={team1} alt="..." className={imageClasses} />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+                SkateHacks for STEM
+                <br />
+                <small className={classes.smallTitle}>What are SkateHacks?</small>
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                SkateHacks is an initiative by the Northern Cape Department of Economic Development and Tourism (DeDaT) and Geekulcha - Sports Science Workshops and Maker/Developer activities are organized for STEM stimulation.
+                This in efforts to encourage youngsters to follow Science and Technology careers and be involved in building inclusive social-relevant solutions.
+               <a href="https://www.geekulcha.com/skatehacks">Read More</a> 
+                </p>
+              </CardBody>
             </Card>
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
@@ -83,39 +114,22 @@ export default function TeamSection() {
                 <img src={team2} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-              Mixo Ngoveni
+                Open Campus
                 <br />
-                <small className={classes.smallTitle}>CEO of Geekulcha</small>
+                <small className={classes.smallTitle}>What is Open Campus?</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                Mixo Fortune Ngoveni is the Founder/CEO of an Geekulcha where young, skilled, creative and ambitious tech 
-                minds meet to connect. He himself is a young tech entrepreneur, mobile ninja, connector, social media geek,
-                amateur chef, member of Tedx Pretoria’s organising team and brand manager for Red Bull Basement South Africa.
-                  <a href="#pablo">links</a>
+                Open Campus is a GKSS programme to enable mass access to technological resources and tools, promote open innovation and elevate collaboration economy in the Northern Cape.
+                The meetup events will be hosted at various campuses for students in Kimberley. Students will connect, learn, share and help each other grow with each other's skills/knowledge.
+                <a href="http://opencampus.ncdev.co.za/">Read More</a> 
                 </p>
               </CardBody>
-              <CardFooter className={classes.justifyCenter}>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-twitter"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-linkedin"} />
-                </Button>
-              </CardFooter>
             </Card>
           </GridItem>
-          
-        </GridContainer>
-      </div>
-    </div>
+          </GridContainer>
+          </div>
+          </div>
+      
   );
-}
+  }

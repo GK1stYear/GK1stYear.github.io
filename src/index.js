@@ -5,6 +5,8 @@ import { Router, Route, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
+
 //import "assets/scss/material-kit-react.scss?v=1.8.0";
 
 // pages for this product
@@ -24,3 +26,4 @@ ReactDOM.render(
   </Router>,
   document.getElementById("root")
 );
+

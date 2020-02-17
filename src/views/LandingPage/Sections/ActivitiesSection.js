@@ -16,13 +16,16 @@ import CardBody from "components/Card/CardBody.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
 
-import team1 from "assets/img/faces/avatar.jpg";
-import team2 from "assets/img/faces/christian.jpg";
+import team1 from "assets/img/faces/hackathon.jpg";
+import team2 from "assets/img/faces/open-data.jpg";
+import team3 from "assets/img/faces/safehack.jpg";
+import team4 from "assets/img/faces/stem.jpg";
+import team5 from "assets/img/faces/opencampus.jpg";
 
 
 const useStyles = makeStyles(styles);
 
-export default function TeamSection() {
+export default function ActivitiesSection() {
   const classes = useStyles();
   const imageClasses = classNames(
     classes.imgRaised,
@@ -56,7 +59,7 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team1} alt="..." className={imageClasses} />
+                <img src={team2} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Open Data Programmes
@@ -74,7 +77,7 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team1} alt="..." className={imageClasses} />
+                <img src={team3} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 SafeHack: Cyber Security
@@ -92,7 +95,7 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team1} alt="..." className={imageClasses} />
+                <img src={team4} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 SkateHacks for STEM
@@ -111,7 +114,7 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team2} alt="..." className={imageClasses} />
+                <img src={team5} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Open Campus
@@ -130,6 +133,5 @@ export default function TeamSection() {
           </GridContainer>
           </div>
           </div>
-      
   );
   }

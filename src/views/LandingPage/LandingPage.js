@@ -4,6 +4,25 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import { Button } from 'reactstrap';
+import AboutSection from "./Sections/AboutSection.js";
+import ActivitiesSection from "./Sections/ActivitiesSection.js";
+import JoinSection from "./Sections/JoinSection.";
+
+import { useState } from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavbarText
+} from 'reactstrap';
 
 
 
@@ -23,10 +42,11 @@ import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
-import ProductSection from "./Sections/ProductSection.js";
-import TeamSection from "./Sections/TeamSection.js";
+//import ProductSection from "./Sections/ProductSection.js";
+//import TeamSection from "./Sections/TeamSection.js";
+//import WorkSection from "./Sections/WorkSection.js";
 //import WorkSection from "../../../gk1styear.github.io/src/views/LandingPage/Sections/WorkSection.js";
-import WorkSection from "./Sections/WorkSection.js";
+
 
 const dashboardRoutes = [];
 
@@ -34,6 +54,9 @@ const useStyles = makeStyles(styles);
 
 
 export default function LandingPage(props) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
   const classes = useStyles();
   const { ...rest } = props;
   return (
@@ -58,7 +81,7 @@ export default function LandingPage(props) {
               <h1 className={classes.title}>Geekulcha 1st Year Platform</h1>
               
               <br />
-              <Button color= "secondary" size="lg">About</Button>
+              <Button color= "secondary" size="lg" >About</Button>
               <Button color= "secondary" size="lg">Activities</Button>
               <Button color= "secondary" size="lg">Join</Button>
                                                                                                                                                                
@@ -68,9 +91,10 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <ProductSection />
-          <TeamSection />
-          <WorkSection />
+          <AboutSection />
+          <ActivitiesSection />
+          <JoinSection />
+          
           
         </div>
       </div>

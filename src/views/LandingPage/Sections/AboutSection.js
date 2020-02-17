@@ -12,7 +12,7 @@ import styles from "assets/jss/material-kit-react/views/landingPageSections/prod
 
 const useStyles = makeStyles(styles);
 
-export default function ProductSection() {
+export default function AboutSection() {
   const classes = useStyles();
   return (
     <div className={classes.section}>

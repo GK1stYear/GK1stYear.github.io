@@ -7,7 +7,7 @@
 /coverage
 
 # production
-/build
+#/build
 
 # misc
 .DS_Store
@@ -23,6 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # package
-/dist
+
 # compiled css
 *.css

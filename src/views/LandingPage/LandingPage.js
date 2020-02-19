@@ -25,6 +25,7 @@ import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
+import  goUpNarrrowImage from "assets/img/faces/goUpNarrrowImage.jpg";
 
 // Sections for this page
 //import ProductSection from "./Sections/ProductSection.js";
@@ -73,6 +74,14 @@ export default function LandingPage(props) {
              
 
               <Button color= "secondary" size="lg">Join</Button>
+              <ScrollToTop showUnder={0} duration={1000} >
+            <button>
+           <img src={goUpNarrrowImage} style={{
+             display: "inline-block",
+             marginRight: "10px"
+              }} />
+             </button>
+            </ScrollToTop>
                                                                                                                                                                
             </GridItem>
           </GridContainer>

@@ -1,3 +1,1 @@
----
-permalink: public/index.html
----
+Geekulcha 1st Year Platform

@@ -74,8 +74,12 @@ export default function LandingPage(props) {
 
               <Button color= "secondary" size="lg">Join</Button>
               <ScrollToTop showUnder={160}>
-  <span>UP</span>
-</ScrollToTop>                                                                                                                                               
+              <span>UP</span>
+               </ScrollToTop>                                                                                                                                               
+             <a href="#about" class="hbtn btn btn-danger" >About</a>
+             <a href="#activities"  class="hbtn btn btn-danger" >Activities</a>
+             <a href="#join" class="hbtn btn btn-danger">Join</a>
+                                                                                                                                                               
             </GridItem>
           </GridContainer>
         </div>
@@ -84,8 +88,10 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <div id="about"></div>
           <AboutSection/>
+
           <div id="activities"></div>
           <ActivitiesSection />
+
           <div id="join"></div>
           <JoinSection />
           

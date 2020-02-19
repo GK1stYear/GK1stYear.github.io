@@ -16,11 +16,12 @@ import CardBody from "components/Card/CardBody.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
 
-import team1 from "assets/img/faces/hackathon.jpg";
-import team2 from "assets/img/faces/open-data.jpg";
+import team1 from "assets/img/faces/hackath.jpg";
+import team2 from "assets/img/faces/opendata.jpg";
 import team3 from "assets/img/faces/safehack.jpg";
-import team4 from "assets/img/faces/stem.jpg";
+import team4 from "assets/img/faces/skatehacks.jpg";
 import team5 from "assets/img/faces/opencampus.jpg";
+import team6 from "assets/img/faces/women.jpg";
 
 
 const useStyles = makeStyles(styles);
@@ -28,8 +29,8 @@ const useStyles = makeStyles(styles);
 export default function ActivitiesSection() {
   const classes = useStyles();
   const imageClasses = classNames(
-    classes.imgRaised,
-    classes.imgRoundedCircle,
+
+    classes.imgRound,
     classes.imgFluid
   );
   return (
@@ -40,7 +41,7 @@ export default function ActivitiesSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team1} alt="..." className={imageClasses} />
+                <img src={team1} alt="..." className={imageClasses} width="1000" height="9000" />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Hackathons
@@ -126,6 +127,24 @@ export default function ActivitiesSection() {
                 Open Campus is a GKSS programme to enable mass access to technological resources and tools, promote open innovation and elevate collaboration economy in the Northern Cape.
                 The meetup events will be hosted at various campuses for students in Kimberley. Students will connect, learn, share and help each other grow with each other's skills/knowledge.
                 <a href="http://opencampus.ncdev.co.za/">Read More</a> 
+                </p>
+              </CardBody>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <Card plain>
+              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                <img src={team6} alt="..." className={imageClasses} />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+                Women Empowerment
+                <br />
+                <small className={classes.smallTitle}>What is Women Empowerment?</small>
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                Driving Programmes to attract and empower women into the ICT field -girls doing it themselves.
+                <a href="https://gkss.geekulcha.com/">Read More</a> 
                 </p>
               </CardBody>
             </Card>

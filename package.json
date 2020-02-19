@@ -3,7 +3,7 @@
   "version": "1.8.0",
   "description": "Project Description",
   "private": true,
-  "homepage": "https://gk1styear.github.io",
+  "homepage": "https://gk1styear.github.io/gh-pages",
   "main": "dist/index.js",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",

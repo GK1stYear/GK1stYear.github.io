@@ -67,21 +67,9 @@ export default function LandingPage(props) {
               
               <br />
 
-
-             <a href="#about" color= "secondary" >About</a>
-             <a href="#activities" color= "secondary" >Activities</a>
-             <a href="#join" color= "secondary" >Join</a>
-             
-
-              <Button color= "secondary" size="lg">Join</Button>
-              <ScrollToTop showUnder={0} duration={1000} >
-            <button>
-           <img src={goUpNarrrowImage} style={{
-             display: "inline-block",
-             marginRight: "10px"
-              }} />
-             </button>
-            </ScrollToTop>
+             <a href="#about" class="hbtn btn btn-danger" >About</a>
+             <a href="#activities"  class="hbtn btn btn-danger" >Activities</a>
+             <a href="#join" class="hbtn btn btn-danger">Join</a>
                                                                                                                                                                
             </GridItem>
           </GridContainer>
@@ -91,8 +79,10 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <div id="about"></div>
           <AboutSection/>
+
           <div id="activities"></div>
           <ActivitiesSection />
+
           <div id="join"></div>
           <JoinSection />
           

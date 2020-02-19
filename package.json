@@ -1,8 +1,9 @@
 {
-  "name": "1stYear",
+  "name": "1st Year",
   "version": "1.8.0",
   "description": "Project Description",
   "private": true,
+  "homepage": "https://1styear.geekulcha.dev",
   "main": "dist/index.js",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
@@ -46,6 +47,8 @@
     "typescript": "3.5.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test --env=jsdom",

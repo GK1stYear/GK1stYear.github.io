@@ -4,27 +4,15 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import { Button } from 'reactstrap';
+//import { Component } from "react";
+
+//import { Component } from "react";
+//import BackToTop from "react-back-to-top";
+
+
 import AboutSection from "./Sections/AboutSection.js";
 import ActivitiesSection from "./Sections/ActivitiesSection.js";
 import JoinSection from "./Sections/JoinSection.";
-
-import { useState } from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
-} from 'reactstrap';
-
-
 
 // @material-ui/icons
 
@@ -34,10 +22,7 @@ import Header from "components/Header/Header.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 //import CustomInput from "components/CustomInput/CustomInput.js";
-
-
-
-//import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
@@ -54,9 +39,7 @@ const useStyles = makeStyles(styles);
 
 
 export default function LandingPage(props) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
+ 
   const classes = useStyles();
   const { ...rest } = props;
   return (
@@ -65,7 +48,7 @@ export default function LandingPage(props) {
         color="transparent"
         routes={dashboardRoutes}
         brand="GK1stYear"
-        //rightLinks={<HeaderLinks />}
+        rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
           height: 400,
@@ -74,6 +57,7 @@ export default function LandingPage(props) {
         {...rest}
       />
       
+      
       <Parallax filter image={require("assets/img/landing-bg.jpg")}>
         <div className={classes.container}>
           <GridContainer>
@@ -81,8 +65,13 @@ export default function LandingPage(props) {
               <h1 className={classes.title}>Geekulcha 1st Year Platform</h1>
               
               <br />
-              <Button color= "secondary" size="lg" >About</Button>
-              <Button color= "secondary" size="lg">Activities</Button>
+
+
+             <a href="#about" color= "secondary" >About</a>
+             <a href="#activities" color= "secondary" >Activities</a>
+             <a href="#join" color= "secondary" >Join</a>
+             
+
               <Button color= "secondary" size="lg">Join</Button>
                                                                                                                                                                
             </GridItem>
@@ -91,8 +80,11 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <AboutSection />
+          <div id="about"></div>
+          <AboutSection/>
+          <div id="activities"></div>
           <ActivitiesSection />
+          <div id="join"></div>
           <JoinSection />
           
           

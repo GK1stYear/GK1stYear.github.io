@@ -1,7 +1,7 @@
 {
   "name": "gkfirstyear",
   "version": "1.8.0",
-  "description": "Project Description",
+  "description": "The Geekulcha 1st Year platform",
   "private": true,
   "homepage": "http://gk1styear.github.io/gk1styear",
   "main": "src/index.js",

@@ -133,8 +133,8 @@ export default function LandingPage(props) {
 <div class="grid">
 <div class="col-6 flex items-center height-100%">
 <div class="text-component padding-md ">
-<h2>How to get started</h2>
-<p class="display@xs">This is the best platform to showcase your talent or work on what you have. Join us today!!</p>
+<h2>Sorry this is for first years only!!!</h2>
+<p class="display@xs">First year student? This is the best platform to showcase your talent or work on what you have. Join us today!! Don't miss this opportunity</p>
 </div>
 </div>
 <div class="col-6 height-100%">
@@ -142,45 +142,9 @@ export default function LandingPage(props) {
 </div>
 </div>
 </li>
-<li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
-<div class="grid">
-<div class="col-6 flex items-center height-100%">
-<div class="text-component padding-md ">
-<h2>Card Two</h2>
-<p class="display@xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-<p><a href="#0" class="btn btn--accent">Read more</a></p>
-</div>
-</div>
-<div class="col-6 height-100%">
-<img class="block width-100% height-100% object-cover" src={"https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg"} alt="Image description"/>
-</div>
-</div>
-</li>
-<li data-theme="defa
-ult" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
-<div class="grid">
-<div class="col-6 flex items-center height-100%">
-<div class="text-component padding-md ">
-<h2>Card Three</h2>
-<p class="display@xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
- <p><a href="#0" class="btn btn--accent">Read more</a></p>
-</div>
-</div>
-<div class="col-6 height-100%">
-<img class="block width-100% height-100% object-cover" src={"https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-3.jpg"} alt="Image description"/>
-</div>
-</div>
-</li>
 </ul>
 </div>
-<div class="container max-width-adaptive-sm">
-<div class="text-component line-height-lg v-space-md">
-</div>
-</div>
 </main>
-<script src="assets/js/scripts.js"></script>
-<div class="demo-avd demo-avd-cf demo-avd-cf--top-mb demo-avd--dark js-demo-avd" ></div>
-<script src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/js/demo-avd.js"></script>
 
         </div>
         

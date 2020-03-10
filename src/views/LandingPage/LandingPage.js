@@ -125,7 +125,8 @@ export default function LandingPage(props) {
 </div>
 </div>
 </li>
-<li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
+<li data-theme="defa
+ult" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
 <div class="grid">
 <div class="col-6 flex items-center height-100%">
 <div class="text-component padding-md ">

@@ -5,6 +5,7 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 //import { Button } from 'reactstrap';
 //import { Component } from "react";
+import Faq from 'react-faq-component';
 
 //import { Component } from "react";
 //import BackToTop from "react-back-to-top";
@@ -44,6 +45,39 @@ export default function LandingPage(props) {
  
   const classes = useStyles();
   const { ...rest } = props;
+  const data = {
+    title: "FAQ (How it works)",
+    rows: [
+      {
+        title: "Lorem ipsum dolor sit amet,",
+        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat, 
+                ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus. 
+                In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae. 
+                Fusce sed commodo purus, at tempus turpis.`
+      },
+      {
+        title: "Nunc maximus, magna at ultricies elementum",
+        content: "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor."
+      },
+      {
+        title: "Curabitur laoreet, mauris vel blandit fringilla",
+        content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem. 
+              Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam. 
+              Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat. 
+              Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `
+      },
+      {
+        title: "What is the package version",
+        content: "v1.0.0"
+      }]
+  }
+  const styles = {
+    // bgColor: 'white',
+    titleTextColor: 'blue',
+    rowTitleColor: 'blue',
+    // rowContentColor: 'grey'
+  }
+  
   return (
 
     <div>
@@ -58,7 +92,8 @@ export default function LandingPage(props) {
           color: "white"
         }}
         {...rest}
-      />  
+      /> 
+       
       
       <Parallax filter image={require("assets/img/landing-bg.jpg")}>
         <div className={classes.container}>
@@ -88,11 +123,13 @@ export default function LandingPage(props) {
           <JoinSection />  
         </div>
       </div>
+      <div>
+        <Faq data={data} styles={styles}/>
+      </div>
 
       <main class="padding-y-xl">
 <div class="container max-width-adaptive-sm margin-bottom-lg">
 <div class="text-component text-center">
-<h1 class="text-xxxl">1st Year Initave Programmes</h1>
 <p class="text-md">👇 Scroll down to see what we got for you</p>
 </div>
 </div>
@@ -144,8 +181,6 @@ ult" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
 </div>
 <div class="container max-width-adaptive-sm">
 <div class="text-component line-height-lg v-space-md">
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem repellat non ratione eum provident quaerat obcaecati dicta autem voluptates sit cum quis distinctio, atque sint commodi reprehenderit perspiciatis iure velit molestiae eos molestias ipsa nihil quia? Porro tempore in fugit, aspernatur et temporibus aliquam magnam adipisci deleniti dicta repellat alias nostrum impedit quidem odit excepturi nam. Itaque numquam unde quae dignissimos exercitationem placeat, ipsa amet tempora vitae ullam animi! Hic asperiores in esse atque expedita dolorem officia illo commodi fugit earum ab, assumenda optio, sed repellat. Maiores laudantium reprehenderit suscipit accusamus assumenda, debitis nemo ut sapiente numquam doloremque alias explicabo minus autem harum illum dicta. Unde obcaecati inventore repellat id eligendi eaque, rerum aliquam maiores aspernatur cumque tenetur quo qui mollitia atque quasi voluptate ipsum neque explicabo voluptatem quibusdam beatae quae iste vero doloribus! Natus libero quibusdam molestias harum atque, assumenda doloribus quis, quam corporis, voluptas suscipit magni! Enim sapiente totam consequatur repellat maxime placeat perferendis iste maiores soluta, obcaecati incidunt expedita eius cumque ipsa quo sed. Minus distinctio culpa cumque labore nulla laborum ex, explicabo magni mollitia eaque aliquam vero blanditiis quae, id necessitatibus error voluptas harum tempora sint porro. Facilis beatae quasi soluta et ipsum suscipit repellendus inventore.</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsam molestias. Fuga similique, dolor tempora rerum perferendis ipsam ullam doloribus beatae esse facilis quae sit excepturi expedita non, sunt accusantium magnam? Animi nesciunt nostrum eligendi iusto voluptatum hic qui. Quod distinctio qui nobis et doloremque. Fuga, itaque? Laborum dignissimos nobis quaerat optio voluptatum similique unde, neque cupiditate, vel, fugiat dolore? Accusantium neque deserunt ducimus enim, illum laborum magni ipsam eos optio aspernatur nam necessitatibus quod natus, dolor laboriosam illo velit.</p>
 </div>
 </div>
 </main>
@@ -154,5 +189,7 @@ ult" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
 <script src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/js/demo-avd.js"></script>
 
         </div>
+        
+        
   );
 }
